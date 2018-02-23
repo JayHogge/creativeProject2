@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="langStudy.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+		<style>
+		div{
+			width:100%;
+			height: 300px;
+			background-color: #990099;
+		}
+		body{
+			margin:0px;
+			display: flex;
+			flex-direction: column;
+		}
+		footer{
+			background-color: lightgray;
+			width:100%;
+			height:150px;
+			text-align: center;
+			
+			margin-top: auto;
+			bottom: 0px;
+		}
+		footer p{
+			position:relative;
+			top: 20px;
+		}
+		.answerBox {
+			width:100%;
+			color: lightgray;
+			font-size: 26px;
+			border: 0px;
+			text-align: center;
+			margin-top: 40px;
+			margin-bottom:40px;
+			padding: 15px;
+		}
+		#ansBtn {
+
+		}
+		#navmenu {
+			width:100px;
+			height:20px;
+			background-color: #BB33BB;
+			box-shadow: 5px 10px #22222288;
+			float:right;
+			margin-right: 10px;
+			margin-top: 5px;
+		}
+		#char {
+			width: 200px;
+			height: 200px;
+			font-size: 150px;
+			/*background-color: blue;*/
+			position: relative;
+			top: 45px;
+		}
+		#response {
+			height: 50px;
+			background-color: white;
+			top:10px;
+			font-size: 32px;
+		}
+		#showAnswer {
+			height: auto;
+			background-color: white;
+			font-size: 32px;
+		}
+		#showAnswer div{
+			font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+			vertical-align: center;
+			margin:0px;
+			float:left;
+			width: 33%;
+			height: 100px;
+			background-color: white;
+			font-size: 32px;
+		}
+		#showAnswer #meaning{
+			width: 100%;
+			height: 50px;
+			margin-bottom: 50px;
+			position: relative;
+			bottom: 0px;
+			font-size: 48px;
+			font-family: "Indie Flower", cursive;
+		}
+		#ansContainer
+		{
+			border: white solid 1px;
+			width:50%; 
+			height:auto;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<center>
+				<div id="navmenu">
+
+				</div>
+				<div id="char">
+				</div>
+			</center>
+		</div>
+		<input class="answerBox" type="text" value="input answer here" />
+		
+		<br><br><br><br><br>
+		<center>
+			<div id="ansContainer">
+				<div id="response" > </div>
+				<div id="showAnswer"> 
+					<div id="onyomi"> </div>
+					<div id="kunyomi"> </div>
+					<div id="nanori"> </div>
+					<div id="meaning"> </div>
+				</div>
+
+			</div>
+		</center>
+
+		<footer>
+			<br><br>
+			<nav>A language flash-card system, using an api to supply study material</nav>
+			<p>visit my github url at .............</p>
+		</footer>
+	</body>
+</html>
