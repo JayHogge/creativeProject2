@@ -1,6 +1,4 @@
 
-
-
 var reqURL = "https://www.wanikani.com/api/user/52dc63de6f2650d7ca48ad2ccdf5a188/kanji/1"
 var studyList = {};
 var card = 0; //current card index
